@@ -34,4 +34,23 @@ ssh_public_key_path = "~/.ssh/id_rsa.pub"  # Path to your SSH public key
 mysql_volume_size = 10  # GB - Minimum 1GB, recommended 10GB for development
 
 # Optional Features
-enable_monitoring
+enable_monitoring = true   # Enable DigitalOcean monitoring (free)
+enable_backups   = false  # Enable automated backups (+20% cost)
+
+# Additional Tags (optional)
+tags = ["interview", "demo"]
+
+# Example configurations for different environments:
+
+# Development Environment (minimal cost)
+# manager_droplet_size   = "s-1vcpu-1gb"    # $6/month
+# worker_droplet_size    = "s-1vcpu-1gb"    # $6/month
+# database_droplet_size  = "s-1vcpu-2gb"    # $12/month
+# mysql_volume_size      = 5
+
+# Production Environment (recommended)
+# manager_droplet_size   = "s-2vcpu-4gb"    # $48/month
+# worker_droplet_size    = "s-2vcpu-4gb"    # $48/month
+# database_droplet_size  = "s-4vcpu-8gb"    # $96/month
+# mysql_volume_size      = 50
+# enable_backups         = true
