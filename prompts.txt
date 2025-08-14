@@ -1,0 +1,99 @@
+PROMPT 1:
+For each prompt I give you, write to a file prompts.txt, so I can audit the work.
+
+please analyze the instructions below:
+[Full instructions for Stage 2 Candidate Briefing: AI Developer Hands-On Challenge]
+
+ANALYSIS OF PROMPT 1:
+User is requesting analysis of job interview instructions for an AI Developer position. The challenge involves building a Feature Voting System with database, backend API, and mobile frontend within 90-150 minutes using AI tools like Claude. Key evaluation criteria include prompting skills, tool orchestration, system thinking, functionality, and documentation of the prompting process.
+
+PROMPT 2:
+First, lets discuss the best system architecture for a "mini-project":
+Feature Voting System – Let users post a feature and upvote others
+The project must have:
+● A database
+● A backend API
+● A frontend UI: CHOOSE ONE native mobile: iOS or Android
+
+ANALYSIS OF PROMPT 2:
+User wants to discuss optimal system architecture for the Feature Voting System before implementation. Need to recommend tech stack and architecture that balances simplicity with completeness for the 90-150 minute timeframe.
+
+PROMPT 3:
+Stacks: Database: Mysql, Backend Node.js +Express, Mobile: Android Kotlin (should be native).
+We will use Docker Swarm to setup the project. (Backend container, database mysql container
+Database schema: 
+* Users, 
+* Features,  
+* Votes
+Backend API: 
+* Users CRUD, 
+* Features CRUD, 
+* Votes POST, 
+* Reports:
+   * Features:
+      * Features votes ALL
+      * Features votes GET
+      * Features GET status
+      * Features Result
+      * 
+
+Key architecture decisions:
+1. API - Lets demonstrate our knowledge and build a more complex backend. We will use microservices because they reflect the reality we will find in safer and more efficient projects.
+2. Lets use Mysql, a common and better tool than SQLite
+3. REST API because is a pattern and faster to implement.
+4. Lets use JWT authentication
+5. Because this project is not more complex, we will not use in memory caching.
+Please create a document MD with the requirements of our project include the database analysis schema.
+
+ANALYSIS OF PROMPT 3:
+User has specified the final tech stack and architecture decisions. They want a comprehensive project requirements document with database schema analysis in Markdown format. The project will use Docker Swarm, MySQL, Node.js/Express backend with microservices, JWT auth, and native Android Kotlin frontend.
+
+PROMPT 4:
+Please add in our document MD the infrastructure to use a VPS and use Terraform to create the structure. This will be the phase 1
+
+ANALYSIS OF PROMPT 4:
+User wants to add VPS infrastructure and Terraform provisioning to the project requirements document. This will become the new Phase 1, which means the existing phases need to be renumbered. Need to include Terraform configuration for VPS setup with Docker Swarm cluster.
+
+PROMPT 5:
+Perfect. Lets create the files like artifacts from phase 1
+
+ANALYSIS OF PROMPT 5:
+User wants to create the actual Terraform configuration files as artifacts for Phase 1. This includes creating separate files for main.tf, variables.tf, outputs.tf, providers.tf, and the bootstrap scripts referenced in the project requirements document.
+
+PROMPT 6:
+continue
+
+ANALYSIS OF PROMPT 6:
+User wants me to continue creating the remaining Phase 1 artifacts. I've completed the main Terraform files and bootstrap scripts, and now I should finish with any remaining configuration files like the example variables file, README, and deployment script.
+
+PROMPT 7:
+Proced with phase 2
+
+ANALYSIS OF PROMPT 7:
+User wants to proceed with Phase 2: Application Infrastructure Setup. This involves creating Docker Compose stack deployment, MySQL container setup with schema, microservices architecture setup, and basic service configurations.
+
+PROMPT 8:
+continue
+
+ANALYSIS OF PROMPT 8:
+User wants me to continue with Phase 2 artifacts. I've created the Docker Compose file, database schema, triggers, sample data, MySQL config, and started on the API Gateway. Need to complete the API Gateway server.js and continue with other microservices.
+
+PROMPT 9:
+proceed with phase 3
+
+ANALYSIS OF PROMPT 9:
+User wants to proceed with Phase 3: Backend Development. This involves completing the microservices implementation - User Service (auth + CRUD), Feature Service (CRUD), Voting Service (vote logic), and Reporting Service. Need to create complete implementations for each service with proper business logic, error handling, and API endpoints.
+
+PROMPT 10:
+Continue
+
+ANALYSIS OF PROMPT 10:
+User wants me to continue with Phase 3 implementation. I've completed the User Service, Feature Service, Voting Service, and Reporting Service implementations. I've also created supporting Dockerfiles and comprehensive documentation. Phase 3 is now complete with full backend microservices implementation.
+
+(GEMINI)PROMPT 11:
+Feature Voting System - Project Requirements
+
+Overview based in the document above and the files proceed to create the files from phase4 
+
+PROMPT 12:
+proceed phase 5 
